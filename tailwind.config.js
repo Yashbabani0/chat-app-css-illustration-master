@@ -1,31 +1,39 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      backgroundImage: {
+        "custom-gradient":
+          "linear-gradient(to bottom left, hsl(293, 100%, 63%), hsl(264, 100%, 61%))",
+      },
       colors: {
-        'bright-blue': 'hsl(220, 98%, 61%)',
-        'check-bg-start': 'hsl(192, 100%, 67%)',
-        'check-bg-end': 'hsl(280, 87%, 65%)',
-        'light-gray': '/* Your light gray color */',
-        'light-grayish-blue': '/* Your light grayish blue color */',
-        'light-grayish-blue-hover': '/* Your light grayish blue hover color */',
-        'dark-grayish-blue': '/* Your dark grayish blue color */',
-        'very-dark-grayish-blue': '/* Your very dark grayish blue color */',
-        'very-dark-blue': '/* Your very dark blue color */',
-        'very-dark-desaturated-blue': '/* Your very dark desaturated blue color */',
+        "pale-violet": "hsl(276, 100%, 81%)",
+        "moderate-violet": "hsl(276, 55%, 52%)",
+        "desaturated-dark-violet": "hsl(271, 15%, 43%)",
+        "grayish-blue": "hsl(206, 6%, 79%)",
+        "very-dark-desaturated-violet": "hsl(271, 36%, 24%)",
+        "dark-grayish-violet": "hsl(270, 7%, 64%)",
+
+        // Gradients
+        "light-magenta": "hsl(293, 100%, 63%)",
+        "light-violet": "hsl(264, 100%, 61%)",
+
+        // Secondary Colors
+        white: "hsl(0, 0%, 100%)",
+        "light-grayish-violet": "hsl(270, 20%, 96%)",
+        "very-dark-desaturated-violet": "hsl(271, 36%, 24%)",
+        "very-light-magenta": "hsl(289, 100%, 72%)",
       },
       fontFamily: {
-        'josefin': ['Josefin Sans', 'sans-serif'],
+        rubik: ["Rubik", "sans-serif"],
       },
       fontWeight: {
-        'normal': 400,
-        'bold': 700,
+        normal: 400,
+        medium: 500,
+        bold: 700,
       },
     },
   },
   plugins: [],
-}
+};
