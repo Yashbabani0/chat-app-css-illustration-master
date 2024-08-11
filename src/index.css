@@ -13,5 +13,11 @@ body {
   font-family: "Rubik", sans-serif;
 }
 .gradient {
-  @apply bg-custom-gradient;
+  @apply bg-custom-gradient1;
+}
+.top {
+  @apply bg-custom-gradient2;
+}
+.price {
+  @apply bg-custom-gradient3;
 }

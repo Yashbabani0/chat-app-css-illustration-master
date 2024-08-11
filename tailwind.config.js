@@ -4,8 +4,12 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        "custom-gradient":
+        "custom-gradient1":
           "linear-gradient(to bottom left, hsl(293, 100%, 63%), hsl(264, 100%, 61%))",
+        "custom-gradient2":
+          "linear-gradient(to top right, hsl(264, 100%, 61%), hsl(293, 100%, 63%))",
+        "custom-gradient3":
+          "linear-gradient(to bottom right, hsl(293, 100%, 63%), hsl(264, 100%, 61%))",
       },
       colors: {
         "pale-violet": "hsl(276, 100%, 81%)",
